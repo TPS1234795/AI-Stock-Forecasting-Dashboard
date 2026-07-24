@@ -274,7 +274,7 @@ with tab2:
                     predicted_price = float(scaler.inverse_transform(next_pred_scaled)[0][0])
                     future_prices = forecast_future(close_data["Close"], model, scaler, FORECAST_HORIZON)
 
-                latest_close = float(close_data.iloc[-1])
+                latest_close = float(close_data["Close"].iloc[-1])
                 delta = predicted_price - latest_close
                 pct = (delta / latest_close) * 100 if latest_close else 0
 
