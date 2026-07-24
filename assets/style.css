@@ -1,0 +1,158 @@
+/* ==========================================================
+   AI STOCK FORECASTING DASHBOARD — CUSTOM THEME
+   ========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ---------- App background ---------- */
+.stApp {
+    background: radial-gradient(circle at 20% 0%, #10131c 0%, #0a0c12 55%, #05060a 100%);
+    color: #e5e7eb;
+}
+
+/* ---------- Hero header ---------- */
+.hero {
+    background: linear-gradient(135deg, rgba(0,204,150,0.15), rgba(99,110,250,0.15));
+    border: 1px solid rgba(0,204,150,0.25);
+    border-radius: 18px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin: 0 0 6px 0;
+    background: linear-gradient(90deg, #00CC96, #636EFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin: 0;
+    color: #b8bcc8;
+    font-size: 1rem;
+}
+
+/* ---------- Sidebar ---------- */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0d0f16 0%, #090a0f 100%);
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+.sidebar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #00CC96;
+    padding: 6px 0 2px 0;
+}
+
+/* ---------- Metric cards ---------- */
+div[data-testid="stMetric"] {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0,204,150,0.4);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #9aa0ab;
+    font-weight: 500;
+}
+
+div[data-testid="stMetricValue"] {
+    font-family: 'Poppins', sans-serif;
+    color: #f1f5f9;
+}
+
+/* ---------- Tabs ---------- */
+button[data-baseweb="tab"] {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #9aa0ab;
+    padding: 10px 18px;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #00CC96;
+    border-bottom: 2px solid #00CC96;
+}
+
+/* ---------- Buttons ---------- */
+.stButton > button, .stDownloadButton > button {
+    background: linear-gradient(90deg, #00CC96, #00a37a);
+    color: #05060a;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: all 0.15s ease;
+}
+
+.stButton > button:hover, .stDownloadButton > button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,204,150,0.3);
+}
+
+/* ---------- Expander ---------- */
+div[data-testid="stExpander"] {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+}
+
+/* ---------- Dataframe / tables ---------- */
+div[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ---------- Alerts ---------- */
+div[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    color: #7d828d;
+}
+
+.footer h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #e5e7eb;
+    margin-bottom: 4px;
+}
+
+.footer p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,204,150,0.4);
+    border-radius: 8px;
+}
