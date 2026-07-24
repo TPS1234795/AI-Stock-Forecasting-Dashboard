@@ -1,6 +1,7 @@
 # 📈 AI-Powered Stock Forecasting Dashboard
 
 A professional stock market forecasting dashboard built using **Python, Streamlit, TensorFlow, and Plotly**. The application uses a **Hybrid CNN + LSTM Deep Learning Model** to predict the next day's stock closing price and provides interactive visualizations with technical indicators.
+https://ai-stock-forecasting-dashboard-8p9puxrrc6st8q8ffvydiu.streamlit.app/
 
 ---
 
