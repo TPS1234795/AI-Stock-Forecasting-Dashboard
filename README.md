@@ -127,6 +127,6 @@ Taniprava Sahoo
 
 B.Tech CSE (AI & ML)
 
-GitHub: https://github.com/
+GitHub: https://github.com/TPS1234795
 
-LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN
+LinkedIn: https://www.linkedin.com/in/taniprava-sahoo/
